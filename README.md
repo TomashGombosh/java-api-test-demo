@@ -1,4 +1,4 @@
-# API automation tests demo project
+# API automation tests demo project  ![TeamCity Status Build](http://134.249.164.109/app/rest/builds/buildType:AfjSolutionTest_Check/statusIcon.svg)
 
 ## Table of contents
   * [Preconditions](#preconditions)
