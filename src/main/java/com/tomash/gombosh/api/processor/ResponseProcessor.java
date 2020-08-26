@@ -55,7 +55,7 @@ public class ResponseProcessor {
                 try {
                     final ErrorResponse errorResponse = gson.fromJson(errorJson, ErrorResponse.class);
                     if (nonNull(errorResponse)) {
-                        return ofNullable(errorResponse.getMessage());
+                        return ofNullable(errorResponse.getErrorMessage());
                     } else {
                         return empty();
                     }

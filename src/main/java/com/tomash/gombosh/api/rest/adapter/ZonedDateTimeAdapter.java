@@ -17,7 +17,7 @@ import static java.util.Objects.isNull;
  * @since 1.0.0
  */
 public class ZonedDateTimeAdapter extends TypeAdapter<ZonedDateTime> {
-    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ISO_DATE_TIME;
 
     @Override
     public void write(final JsonWriter jsonWriter, final ZonedDateTime value) throws IOException {
