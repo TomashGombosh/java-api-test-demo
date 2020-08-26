@@ -47,4 +47,4 @@
  
  ## Run on the Team City
  * Go to the [Team City server](http://134.249.164.109/)
- * Login to the server (*To get credential to the server please contact [me](blackjneco@gmail.com)*)
+ * Login to the server (*To get credential to the server please contact [me](https://github.com/TomashGombosh)*)
