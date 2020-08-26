@@ -4,7 +4,7 @@ checkstyle {
 
 tasks.withType(Checkstyle).configureEach {
     reports {
-        xml.enabled = false
+        xml.enabled = true
         html.enabled = true
     }
 }
@@ -18,34 +18,10 @@ tasks.withType(Pmd).configureEach {
     ruleSets = []
     ruleSetConfig = resources.text.fromFile("config/pmd/ruleSet.xml")
     reports {
-        xml.enabled = false
+        xml.enabled = true
         html.enabled = true
     }
 }
 
-jacoco {
-    toolVersion = "0.8.5"
-}
 
-tasks.withType(JacocoReport).configureEach {
-    reports {
-        xml.enabled = false
-        csv.enabled = false
-    }
-}
 
-tasks.withType(JacocoCoverageVerification).configureEach {
-    violationRules {
-        rule {
-            limit {
-                minimum = 0.9
-            }
-        }
-    }
-}
-
-sonarqube {
-    properties {
-        property "sonar.projectName", "Api test framework automation"
-    }
-}
