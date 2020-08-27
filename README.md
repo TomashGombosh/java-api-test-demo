@@ -48,3 +48,6 @@
  ## Run on the Team City
  * Go to the [Team City server](http://134.249.164.109/)
  * Login to the server (*To get credential to the server please contact [me](https://github.com/TomashGombosh)*)
+ * Open *API integration tests Build and Test* under **AFJ Solution** project
+ * Click Run
+ * To see report go to `Open with name API integration tests Build and Test > Artifacts > Collapse allure-report.zip > Click on the index.html`
