@@ -1,15 +1,18 @@
 package com.tomash.gombosh.api;
 
+import java.time.ZonedDateTime;
 import javax.inject.Inject;
 
-import java.time.ZonedDateTime;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 import com.tomash.gombosh.api.service.user.UserService;
 import com.tomash.gombosh.api.service.user.data.User;
 import com.tomash.gombosh.api.service.user.factory.UserFactory;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 
+/**
+ * @author Tomash Gombosh
+ */
 @DisplayName("User Test")
 class UserTests extends BaseTest {
     @Inject

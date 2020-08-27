@@ -3,10 +3,11 @@ package com.tomash.gombosh.api.service.user.factory;
 import java.util.Locale;
 
 import com.devskiller.jfairy.Fairy;
-import com.tomash.gombosh.api.service.Factory;
-import com.tomash.gombosh.api.service.user.data.User;
 import lombok.Setter;
 import lombok.experimental.Accessors;
+
+import com.tomash.gombosh.api.service.Factory;
+import com.tomash.gombosh.api.service.user.data.User;
 
 /**
  * @author Tomash Gombosh
@@ -15,8 +16,8 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class UserFactory implements Factory<User, UserFactory> {
     private static final Fairy FAIRY = Fairy.create(Locale.US);
-    private String name = null;
-    private String job = null;
+    private String name;
+    private String job;
 
     @Override
     public User create() {

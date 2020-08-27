@@ -2,6 +2,7 @@ package com.tomash.gombosh.api.module;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
+
 import com.tomash.gombosh.api.processor.ResponseProcessor;
 import com.tomash.gombosh.api.rest.RestClient;
 import com.tomash.gombosh.api.service.user.client.UserClient;

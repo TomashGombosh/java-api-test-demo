@@ -29,8 +29,8 @@ public class User {
             return false;
         }
         final User user = (User) object;
-        return Objects.equals(name, user.name) &&
-                Objects.equals(job, user.job);
+        return Objects.equals(name, user.name)
+                && Objects.equals(job, user.job);
     }
 
     @Override

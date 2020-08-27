@@ -10,11 +10,11 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import com.tomash.gombosh.api.rest.exception.OkHttpClientException;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import okhttp3.logging.HttpLoggingInterceptor.Level;
 
+import com.tomash.gombosh.api.rest.exception.OkHttpClientException;
 
 /**
  * @author Tomash Gombosh

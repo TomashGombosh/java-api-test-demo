@@ -4,10 +4,11 @@ import java.time.ZonedDateTime;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.tomash.gombosh.api.rest.adapter.ZonedDateTimeAdapter;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import com.tomash.gombosh.api.rest.adapter.ZonedDateTimeAdapter;
 
 /**
  * @author Tomash Gombosh
@@ -23,11 +24,11 @@ public class RestClient {
     public <S> S createService(final Class<S> serviceClass) {
         final OkHttpClient okHttpClient = new CustomOkHttpClient().get();
         final Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl(apiUrl)
-            .addCallAdapterFactory(new RetryCallAdapterFactory(3, 2000))
-            .addConverterFactory(GsonConverterFactory.create(createGson()))
-            .client(okHttpClient)
-            .build();
+                .baseUrl(apiUrl)
+                .addCallAdapterFactory(new RetryCallAdapterFactory(3, 2000))
+                .addConverterFactory(GsonConverterFactory.create(createGson()))
+                .client(okHttpClient)
+                .build();
         return retrofit.create(serviceClass);
     }
 
